@@ -18,15 +18,26 @@
 - 热修复：`hotfix/REQ-XXXX-简短描述`
 - 文档：`docs/REQ-XXXX-简短描述`
 
-## 项目命令（待替换为实际命令）
+## 项目命令
 
-> 以下命令占位符需在项目技术栈确定后替换。
+技术栈：前端 Vue 3 + Vite，后端 Java + Spring Boot（Maven）。
 
-- 格式检查：`<replace-with-format-command>`
-- 静态检查：`<replace-with-lint-command>`
-- 单元测试：`<replace-with-unit-test-command>`
-- 集成测试：`<replace-with-integration-test-command>`
-- 构建：`<replace-with-build-command>`
+### 前端（apps/ 目录）
+
+- 格式检查：`cd apps && npm run format`
+- 静态检查：`cd apps && npm run lint`
+- 单元测试：`cd apps && npm run test:unit`
+- 构建：`cd apps && npm run build`
+
+### 后端（services/ 目录）
+
+- 格式检查：`cd services && mvn spotless:check`
+- 静态检查：`cd services && mvn checkstyle:check`
+- 单元测试：`cd services && mvn test`
+- 集成测试：`cd services && mvn verify -DskipUnitTests`
+- 构建：`cd services && mvn clean package -DskipTests`
+
+> 如实际项目使用 pnpm/yarn 或 Gradle，替换对应包管理器和构建工具即可。
 
 ## 目录结构约定
 
