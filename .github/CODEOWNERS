@@ -1,0 +1,13 @@
+# WeforTraeAI CODEOWNERS
+# 团队台账参考：https://github.com/deepseekeddy/rd-playbook/blob/main/starter/01-团队与责任台账.csv
+
+# 全局默认审核：TL + 对应模块Owner
+*               @chentao-tl
+
+# 目录责任
+/apps/web/      @zhaoming-fe @sunli-fe
+/services/      @zhangqiang-be @zhoujie-be
+/tests/         @zhaoxue-qa
+/.github/       @chentao-tl @zhouning-sre
+/deploy/        @zhouning-sre @chentao-tl
+/docs/          @deepseekeddy @chentao-tl
